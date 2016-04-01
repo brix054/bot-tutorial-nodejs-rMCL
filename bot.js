@@ -18,7 +18,7 @@ function respond() {
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/MaddenCL/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/O32/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -31,26 +31,16 @@ function respond() {
     postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
     this.res.end();
   }
-  else if(request.text && botRegexYub.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.quickmeme.com/img/9f/9f3720469d1ce6c2d20130ed0750935a394df80ffcddec6d16e091d95efea854.jpg");
-    this.res.end();
-  } 
-  else if(request.text && botRegexGTA.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
-    this.res.end();
-  } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/MaddenCl/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/O32/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/MaddenCl/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/O32/players?name="+rep+"&position=all&team=all");
     this.res.end();
   } 
 
@@ -59,14 +49,9 @@ function respond() {
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
     this.res.end();
   } 
-  else if(request.text && botRegexSb.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.reddit.com/r/maddencl");
-    this.res.end();
-  } 
   else if(request.text && botRegexUs.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://docs.google.com/spreadsheets/d/1byoEROZXIsl-eRbOxN7PDErjw68kt9ZVnrjoeUnV500/edit#gid=0");
+    postMessage("N/A");
     this.res.end();
   } 
   else {
