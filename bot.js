@@ -16,9 +16,15 @@ function respond() {
     postMessage(cool());
     this.res.end();
   } 
+  
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/O32/team/"+request.text.substring(5,8)+"/depthchart");
+    this.res.end();
+  } 
+  else if(request.text && botRegexUs.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://docs.google.com/spreadsheets/d/1NxO5acMWeJV5PMA5VJtjZCd3JvdvoRH6V4jy8ZxZhC4/edit#gid=0");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
