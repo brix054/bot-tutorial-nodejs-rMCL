@@ -16,7 +16,7 @@ function respond() {
     postMessage(cool());
     this.res.end();
   } 
-  else if(request.text && botRegexDL.test(request.text)) {
+  else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://docs.google.com/document/d/1zbcoxVyptXG8WoFkeEhr3Bgz0tfbSBQ5zk-kyBw_q_A/");
     this.res.end();
